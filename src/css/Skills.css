@@ -1,0 +1,33 @@
+.skills--ctn {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+
+.keyboard {
+    min-width: 90%;
+    /* min-height: 50%; */
+    border: 1px solid var(--code-color);
+    border-bottom: 50px solid var(--code-color);
+    border-radius: 10px;
+    padding: 5px 7px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row>div {
+    display: flex;
+    gap: 10px;
+}

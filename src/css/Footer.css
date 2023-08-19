@@ -1,0 +1,12 @@
+.footer {
+    height: fit-content
+}
+
+.footer--ctn {
+    width: 100%;
+    background-color: black;
+    color: var(--code-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

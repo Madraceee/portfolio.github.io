@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import { RefObject, useEffect, useRef, useState } from 'react';
+
 import './App.css';
+import Landing from "./sections/Landing";
+import Home from './sections/Home';
+import Aboutme from './sections/Aboutme';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import ContactMe from './sections/ContactMe';
 
 function App() {
+
+  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(true);
+
+  const onComplete = () => {
+    setInitialLoadAnimation(false);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {initialLoadAnimation ?
+        (<Landing onComplete={onComplete} />) :
+        (
+          <div className='page'>
+            <Home />
+            <Aboutme />
+            <Skills />
+            <Projects />
+            <ContactMe />
+          </div>
+        )
+      }
+
+
     </div>
   );
 }

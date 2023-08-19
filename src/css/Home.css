@@ -1,0 +1,41 @@
+.home--ctn {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home--ctn>div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-info--box {
+    width: fit-content;
+    border: 1px solid rgba(248, 81, 66, 0.807);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.home-info--box>* {
+    width: 100%;
+    margin: 5px 50px;
+    font-size: var(--font-medium);
+    display: block;
+}
+
+.name {
+    font-size: var(--font-large);
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.home-links {
+    margin-bottom: 40px;
+}
+
+.home-links img {
+    width: 35px;
+    margin: 10px 5px;
+}

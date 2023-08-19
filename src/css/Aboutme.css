@@ -1,0 +1,25 @@
+.aboutme--ctn {
+    height: 100vh;
+    display: flex;
+    background: var(--main-theme);
+}
+
+.aboutme--ctn>div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-info {
+    width: 80%;
+}
+
+.aboutme-info .heading {
+    color: var(--font-color-heading);
+    font-size: var(--font-heading);
+}
+
+.aboutme-info .text {
+    font-size: var(--font-medium);
+}

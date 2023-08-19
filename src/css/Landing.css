@@ -1,0 +1,30 @@
+.landing-page--ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.landing-page--text {
+    color: var(--code-color);
+    font-size: var(--font-large);
+    font-weight: 600;
+    font-family: var(--font-family-code);
+}
+
+.landing-page--text::after {
+    content: '▮';
+    /* animation: cursorBlink 0.3s cubic-bezier(0, -1.91, 0.31, 1.99) infinite; */
+}
+
+/* Animations */
+/* Cursor animation */
+@keyframes cursorBlink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
