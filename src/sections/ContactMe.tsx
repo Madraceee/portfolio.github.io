@@ -5,7 +5,7 @@ const ContactMe = () => {
     return (
         <div className="page--ctn">
             <div className="contactMe--ctn">
-                <form action="https://formsubmit.co/nitheeshraaja@email.com" method="POST" className="form">
+                <form action="https://formsubmit.co/nitheeshraaja@gmail.com" method="POST" className="form">
                     <h1>Contact Me</h1>
                     <input type="email" name="email" placeholder="Email Your Address"></input>
                     <input type="text" name="name" required placeholder="Email Your Name" />
