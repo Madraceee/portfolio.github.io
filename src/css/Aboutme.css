@@ -23,3 +23,7 @@
 .aboutme-info .text {
     font-size: var(--font-medium);
 }
+
+.aboutme-rightpane img {
+    width: 100%;
+}

@@ -58,7 +58,7 @@ const Aboutme = () => {
                     </div>
                 </div>
                 <div className="aboutme-rightpane">
-                    {/* Face */}
+                    <img src="/sketch.jpg" alt="Sketch" />
                 </div>
             </div>
         </div>

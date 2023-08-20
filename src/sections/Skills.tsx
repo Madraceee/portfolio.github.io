@@ -96,7 +96,7 @@ const Skills = () => {
                         <div>
                             <Key type={"Image"} value="/icons/html_logo.svg" url="https://www.w3.org/html/" notVisible={!(topic === "Languages")} />
                             <Key type={"Image"} value="/icons/css_logo.svg" url="https://www.w3schools.com/css/" notVisible={!(topic === "Languages")} />
-                            <Key type={"Image"} value="/icons/Solidity_logo.svg" url="https://docs.soliditylang.org/en/v0.8.21/" notVisible={!(topic === "Languages")} />
+                            <Key type={"Image"} value="/icons/solidity_logo.png" url="https://docs.soliditylang.org/en/v0.8.21/" notVisible={!(topic === "Languages")} />
                         </div>
                         <div>
                             <Key type={"Text"} value="" />
@@ -151,7 +151,7 @@ const Skills = () => {
                         <div>
                             <Key type={"Image"} value="/icons/git_logo.svg" url="https://git-scm.com/" notVisible={!(topic === "Tools")} />
                             <Key type={"Text"} value="Tools" callback={() => setTopic("Tools")} />
-                            <Key type={"Image"} value="/icons/bash_logo.svg" url="https://www.gnu.org/software/bash/" notVisible={!(topic === "Tools")} />
+                            <Key type={"Image"} value="/icons/bash_logo.png" url="https://www.gnu.org/software/bash/" notVisible={!(topic === "Tools")} />
                             <Key type={"Image"} value="/icons/chartjs_logo.svg" url="https://www.chartjs.org/" notVisible={!(topic === "Tools")} />
                             <Key type={"Image"} value="/icons/docker.svg" url="https://www.docker.com/" notVisible={!(topic === "Tools")} />
                             <Key type={"Image"} value="/icons/tailwind_logo.svg" url="https://tailwindcss.com/" notVisible={!(topic === "Tools")} />
