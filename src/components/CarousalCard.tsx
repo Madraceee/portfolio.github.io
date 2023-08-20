@@ -8,7 +8,6 @@ type Props = {
 };
 
 const CarousalCard = ({ heading, summary, media, url }: Props) => {
-    const display = summary;
     return (
         <div className="carousalCard" >
             <div className="gif-holder card-front">
@@ -16,7 +15,7 @@ const CarousalCard = ({ heading, summary, media, url }: Props) => {
             </div>
             <div className="card-back">
                 <h2 className="project-heading">{heading}</h2>
-                <span className="project-summary">C# and JS assignment listen to events emitted by uniswap contract and display it.</span>
+                <span className="project-summary">{summary}</span>
                 <span className="project-link"><a href={url}>Link</a></span>
             </div>
 

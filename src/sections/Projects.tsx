@@ -42,7 +42,7 @@ const Projects = () => {
                     x: `${carousal.current?.offsetWidth}`,
                 },
                 {
-                    xPercent: -150 * (panels.length + 1),
+                    xPercent: -150 * (panels.length),
                     ease: 'none',
                     scrollTrigger: {
                         trigger: slider.current,
