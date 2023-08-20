@@ -10,7 +10,7 @@ import ContactMe from './sections/ContactMe';
 
 function App() {
 
-  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(false);
+  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(true);
 
   const onComplete = () => {
     setInitialLoadAnimation(false);
