@@ -1,16 +1,27 @@
 .contactMe--ctn {
     height: 90vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.contactMe--text {
+    margin: auto;
+    font-size: 1rem;
+}
+
+.contactMe--text h1 {
+    margin: auto;
+    width: 80%;
 }
 
 
 .form {
     margin: auto;
-    width: 500px;
-    background-color: rgba(255, 255, 255, 0.174);
+    margin-left: 0;
+    width: 600px;
+    background-color: black;
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -19,27 +30,34 @@
     justify-content: center;
 }
 
+input {
+    width: 95%;
+    height: 25px;
+    margin: 15px auto;
+    font-size: 1.3rem;
+    text-align: left;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    color: #ffffff9a;
+    border-bottom: 1px solid #ffffff9a;
+}
+
 button {
-    font-size: 15px;
-    border-radius: 15px;
+    outline: none;
     border: none;
     margin: auto;
     padding: 5px 20px;
     transition: transform 0.3s ease-in-out;
-    background-color: var(--font-color);
-    color: white;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
 }
 
 button:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-
-input {
-    width: 95%;
-    height: 25px;
-    margin: 10px auto;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 5px;
 }

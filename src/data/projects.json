@@ -18,16 +18,16 @@
         "url": "https://www.npmjs.com/package/better-ethers-error"
     },
     {
-        "heading": "Foundry Project",
-        "summary": "Solidity Projects built using foundry with industry practices",
-        "media": "/projects-media/foundry-banner.png",
-        "url": "https://github.com/Madraceee/foundry-defiStableCoin"
-    },
-    {
         "heading": "Car Rental System",
         "summary": "A webapp which allows users to rent a car at their desired location. It connects lenders and rentrs.",
         "media": "/projects-media/car-rental-system.png",
         "url": "https://github.com/Madraceee/CarRentalSystem"
+    },
+    {
+        "heading": "Foundry Project",
+        "summary": "Solidity Projects built using foundry with industry practices",
+        "media": "/projects-media/foundry-banner.png",
+        "url": "https://github.com/Madraceee/foundry-defiStableCoin"
     },
     {
         "heading": "Tenzies",

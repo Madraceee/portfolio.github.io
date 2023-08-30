@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './App.css';
 import Landing from "./sections/Landing";
@@ -7,29 +7,44 @@ import Aboutme from './sections/Aboutme';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import ContactMe from './sections/ContactMe';
+import MobilePage from './sections/MobilePage';
 
 function App() {
 
   const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(true);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const onComplete = () => {
     setInitialLoadAnimation(false);
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1089);
+    };
+
+    window.addEventListener('resize', handleResize);
+  }, [])
+
 
   return (
     <div className="App">
-      {initialLoadAnimation ?
-        (<Landing onComplete={onComplete} />) :
-        (
-          <div className='page'>
-            <Home />
-            <Aboutme />
-            <Skills />
-            <Projects />
-            <ContactMe />
-          </div>
-        )
+      {
+        isMobile ? (<MobilePage />) :
+          initialLoadAnimation ?
+            (<Landing onComplete={onComplete} />) :
+            (
+              <div className='page'>
+                <Home />
+                <Aboutme />
+                <Skills />
+                <Projects />
+                <ContactMe />
+              </div>
+            )
+      }
+
+      {
       }
 
 
