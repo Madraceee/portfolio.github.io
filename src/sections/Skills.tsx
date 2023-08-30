@@ -114,7 +114,7 @@ const Skills = () => {
 
 
                     <div className="row row-4">
-                        <Key type={"Text"} value="Shift" notVisible={true} />
+                        <Key type={"Text"} value="" notVisible={true} />
                         <div>
                             <Key type={"Text"} value="" />
                             <Key type={"Text"} value="" />
@@ -140,9 +140,8 @@ const Skills = () => {
                     </div>
 
                     <div className="row row-5">
-                        <Key type={"Text"} value="CTRL" notVisible={true} />
+                        <Key type={"Text"} value="" />
                         <div>
-                            <Key type={"Text"} value="" />
                             <Key type={"Text"} value="" />
                             <Key type={"Text"} value="" />
                             <Key type={"Text"} value="" />
