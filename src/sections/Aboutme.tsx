@@ -24,7 +24,19 @@ const Aboutme = () => {
             });
 
             gsap.from(".aboutme-leftpane", {
-                translateX: "-50%",
+                translateX: "-90%",
+                delay: 0.5,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: page.current,
+                    start: "top 70%",
+                    toggleActions: "play pause play reverse",
+                    //markers: true
+                }
+            })
+
+            gsap.from(".aboutme-rightpane", {
+                translateX: "90%",
                 delay: 0.5,
                 duration: 1,
                 scrollTrigger: {

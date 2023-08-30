@@ -15,7 +15,7 @@ const Landing = ({ onComplete }: Props) => {
 
     const page = useRef<HTMLDivElement>(null);
 
-    const activities: string[] = ["Building", "Coding", "Playing"];
+    const activities: string[] = ["Building", "Coding", "Tinkering"];
 
     const [direction, setDirection] = useState<string>("right");
     const [displayText, setDisplayText] = useState<string>("");
@@ -29,7 +29,7 @@ const Landing = ({ onComplete }: Props) => {
             setTimeout(() => {
                 setIndex((index) => index + 1);
                 setDisplayText(activities[wordIndex].substring(0, index));
-            }, 300);
+            }, 200);
         }
 
         if (direction === "left" && index >= 0) {

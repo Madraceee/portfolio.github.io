@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 import './App.css';
 import Landing from "./sections/Landing";
@@ -10,7 +10,7 @@ import ContactMe from './sections/ContactMe';
 
 function App() {
 
-  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(false);
+  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(true);
 
   const onComplete = () => {
     setInitialLoadAnimation(false);

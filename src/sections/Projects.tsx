@@ -49,7 +49,6 @@ const Projects = () => {
                         toggleActions: "restart pause reverse none",
                         start: "top top",
                         pin: true,
-                        //snap: 1 / (panels.length - 1),
                         end: `+=${end}`,
                         scrub: true,
                         // markers: true,
@@ -64,12 +63,13 @@ const Projects = () => {
     return (
         <div className="page--ctn" id="gsap-animation-start" ref={slider}>
             <div className="projects--ctn"  >
-                <h1 className="heading" ref={heading}></h1>
+                <h1 className="heading animateText" ref={heading}></h1>
                 <div className="carousal" ref={carousal}>
                     {projects.map((project, id) => (
                         <CarousalCard heading={project.heading} summary={project.summary} media={project.media} url={project.url} key={id} />
                     ))}
                 </div>
+                <p>Keep Scrolling :)</p>
             </div>
         </div>
     );
