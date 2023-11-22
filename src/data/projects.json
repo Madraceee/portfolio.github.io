@@ -1,5 +1,11 @@
 [
     {
+        "heading": "Task Management System",
+        "summary": "Task management system similar to Jira.",
+        "media": "",
+        "url": "https://github.com/Madraceee/gira"
+    },
+    {
         "heading": "Ethereum Gas viewer",
         "summary": "A app which tracks the ethereum gas changes in the last 24hrs.Data is cached in the backend using redis.",
         "media": "/projects-media/gas-viewer.gif",
@@ -42,21 +48,9 @@
         "url": "https://github.com/Madraceee/uniswap-event-listener.png"
     },
     {
-        "heading": "Wave-your-hand",
-        "summary": "Diving into web3 by making a decentralised public space to send messages",
-        "media": "/projects-media/wave-your-hand.png",
-        "url": "https://github.com/Madraceee/wave-your-hand"
-    },
-    {
         "heading": "Weather App",
         "summary": "A simple web-app which allows users to check the weather of any city",
         "media": "/projects-media/weather-app.gif",
         "url": "https://github.com/Madraceee/weather-app"
-    },
-    {
-        "heading": "Chat Room",
-        "summary": "A online chat application which allows users to chat with each others. It uses firebase for storing data.",
-        "media": "/projects-media/chat-room.gif",
-        "url": "https://github.com/Madraceee/chatroom"
     }
 ]

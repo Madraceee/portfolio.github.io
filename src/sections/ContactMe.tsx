@@ -23,7 +23,24 @@ const ContactMe = () => {
                 {
                     rotateZ: 0,
                     opacity: 1,
-                    duration: 0.1,
+                    duration: 0.3,
+                    scrollTrigger: {
+                        trigger: page.current,
+                        toggleActions: "play pause play reverse",
+                        start: "-25% top",
+                        // markers: true
+                    }
+                })
+            gsap.fromTo(".form",
+                {
+                    transformOrigin: "right",
+                    rotateZ: -10,
+                    opacity: 0
+                },
+                {
+                    rotateZ: 0,
+                    opacity: 1,
+                    duration: 0.5,
                     scrollTrigger: {
                         trigger: page.current,
                         toggleActions: "play pause play reverse",

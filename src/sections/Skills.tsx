@@ -90,7 +90,7 @@ const Skills = () => {
                         <div>
                             <Key type={"Text"} value="" />
                             <Key type={"Text"} value="" />
-                            <Key type={"Text"} value="" />
+                            <Key type={"Image"} value="/icons/golang_logo.png" url="https://go.dev/" notVisible={!(topic === "Languages" || topic === "Skills")} />
                             <Key type={"Image"} value="/icons/java_logo.svg" url="https://www.java.com/en/" notVisible={!(topic === "Languages" || topic === "Skills")} />
                         </div>
                         <div>

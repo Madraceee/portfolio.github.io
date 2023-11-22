@@ -1,10 +1,13 @@
 import "../css/Home.css";
+import Landing from "./Landing";
 
 const Home = () => {
     return (
         <div className="page--ctn">
             <div className="home--ctn">
-                <div className="home-animation"></div>
+                <div className="home-animation">
+                    <Landing />
+                </div>
                 <div className="home-info">
                     <div className="home-info--box">
                         <span className="name">I'm Nitheesh Raaja R</span>

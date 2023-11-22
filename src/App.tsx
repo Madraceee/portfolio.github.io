@@ -9,14 +9,13 @@ import Projects from './sections/Projects';
 import ContactMe from './sections/ContactMe';
 import MobilePage from './sections/MobilePage';
 
+import { inject } from '@vercel/analytics';
+
 function App() {
 
-  const [initialLoadAnimation, setInitialLoadAnimation] = useState<boolean>(true);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  inject();
 
-  const onComplete = () => {
-    setInitialLoadAnimation(false);
-  }
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,20 +30,15 @@ function App() {
     <div className="App">
       {
         isMobile ? (<MobilePage />) :
-          initialLoadAnimation ?
-            (<Landing onComplete={onComplete} />) :
-            (
-              <div className='page'>
-                <Home />
-                <Aboutme />
-                <Skills />
-                <Projects />
-                <ContactMe />
-              </div>
-            )
-      }
-
-      {
+          (
+            <div className='page'>
+              <Home />
+              <Aboutme />
+              <Skills />
+              <Projects />
+              <ContactMe />
+            </div>
+          )
       }
 
 

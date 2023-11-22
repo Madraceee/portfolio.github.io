@@ -7,11 +7,8 @@ import { gsap } from "gsap";
 
 
 
-type Props = {
-    onComplete: () => void
-}
 
-const Landing = ({ onComplete }: Props) => {
+const Landing = () => {
 
     const page = useRef<HTMLDivElement>(null);
 
@@ -61,7 +58,6 @@ const Landing = ({ onComplete }: Props) => {
                 gsap.to(".landing-page--text", {
                     opacity: 0,
                     duration: 2,
-                    onComplete: onComplete
                 })
             }
 
