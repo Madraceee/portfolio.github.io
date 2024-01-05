@@ -1,5 +1,11 @@
 [
     {
+        "heading": "Extended Rock Paper Scissors",
+        "summary": "A Extended Rock paper scissors on blockchain",
+        "media": "/projects-media/rps.png",
+        "url": "https://youtu.be/4QvrwAJITwk"
+    },
+    {
         "heading": "Task Management System",
         "summary": "Task management system similar to Jira.",
         "media": "/projects-media/gira.png",
@@ -46,11 +52,5 @@
         "summary": "C# and JS assignment listen to events emitted by uniswap contract and display it.",
         "media": "/projects-media/uniswap-event-listener.png",
         "url": "https://github.com/Madraceee/uniswap-event-listener.png"
-    },
-    {
-        "heading": "Weather App",
-        "summary": "A simple web-app which allows users to check the weather of any city",
-        "media": "/projects-media/weather-app.gif",
-        "url": "https://github.com/Madraceee/weather-app"
     }
 ]
