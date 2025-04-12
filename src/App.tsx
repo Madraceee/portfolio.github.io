@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 import './App.css';
-import Landing from "./sections/Landing";
 import Home from './sections/Home';
 import Aboutme from './sections/Aboutme';
 import Skills from './sections/Skills';

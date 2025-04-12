@@ -15,6 +15,7 @@ const Home = () => {
                         <div className="home-links">
                             <a href="https://github.com/Madraceee" target="_blank"><img className="home-links-logo" src="icons/github.svg" alt="Github" /></a>
                             <a href="https://linkedin.com/in/nitheeshraajar" target="_blank"><img className="home-links-logo" src="/icons/linkedin.svg" alt="Linkedin" /></a>
+                            <a href="https://blog.iamnitheesh.com" target="_blank"><img className="home-links-logo" src="/icons/blog.svg" /></a>
                             <a href="mailto:nitheeshraaja@gmail.com"><img className="home-links-logo mail" src="/icons/mail.png" alt="Mail" /></a>
                         </div>
                     </div>
